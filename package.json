@@ -1,0 +1,65 @@
+{
+  "name": "c-rt",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^10.4.6",
+    "@testing-library/user-event": "^12.0.11",
+    "form-serialize": "^0.7.2",
+    "history": "^5.0.0",
+    "msw": "^0.19.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^6.0.0-beta.0",
+    "react-scripts": "3.4.1",
+    "uuid": "^8.2.0",
+    "validate.js": "^0.13.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
+    "eject": "react-scripts eject",
+    "update": "npx msw init public",
+    "test:cvr": "react-scripts test --env=jest-environment-jsdom-sixteen --coverage --watchAll=false",
+    "test:input": "react-scripts test -i src/tutorials/3_input/complete/input.test.js -t",
+    "test:todo": "react-scripts test -i src/tutorials/6_todo2/todo.test.js -t",
+    "test:login": "react-scripts test -i src/tutorials/7_login/login.test.js -t",
+    "test:dog": "react-scripts test -i src/tutorials/11_dog/dog.test.js -t",
+    "test:client-dog": "react-scripts test -i src/tutorials/11_dog/client-dog.test.js -t"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "core-js": "^3.6.5",
+    "jest-axe": "^3.4.0",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "jest-fetch-mock": "^3.0.3",
+    "prettier": "^2.0.5",
+    "regenerator-runtime": "^0.13.5",
+    "yarn": "^1.22.4"
+  },
+  "jest": {
+    "coverageReporters": [
+      "text-summary"
+    ]
+  }
+}
